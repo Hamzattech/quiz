@@ -17,9 +17,9 @@ body{
     z-index: 99;
     right: 20px;
     top: 100px;
-    color: black;
+    color: white;
     text-decoration: none;
-    background-color: rgb(187, 204, 36);
+    background-color: #694f61;
     padding: 6px;
     border-radius: 5px;
     border: 2px solid black;
@@ -32,10 +32,11 @@ body{
     top: 150px;
     padding: 6px;
     border-radius: 7px;
-    background-color: rgb(187, 204, 36);
-    color: black;
+    background-color: #694f61;
+    color: white;
     border: 2px solid black;
     display: none;
+    font-weight: lighter;
 }
 
 #message{
@@ -46,23 +47,22 @@ body{
     color: white;
     text-align: center;
     border-radius: 6px;
-    margin-bottom: 5px;
     margin-top: 5px;
     width: 80%;
-    border: 2px solid rgb(187, 204, 36);
+    border: 2.5px solid #694f61;
 }
 #reset{
     padding: 6px;
     border-radius: 3px;
-    color: black;
+    color: white;
     border: 2px solid black;
-    background-color: rgb(187, 204, 36);
+    background-color: #694f61;
     text-decoration: none;
     font-weight: lighter;
     font-size: small;
 }
 .formContainer{ 
-    background-color:rgb(187, 204, 36);
+    background-color:#694f61;
     display: flex;
     flex-direction: column;
     margin-top: 0;
@@ -83,21 +83,21 @@ p{
     color: white;
     padding: 10px;
 }
-form{
+#form{
     margin-top: 60px;
-    background-color:gold;
+    background-color:#b784a7;
     padding-left: 30px;
 }
 .resultshow{
-    background-color: rgb(187, 204, 36);
+    background-color: #694f61;
     margin-left: 10px;
     padding: 10px;
-    color: black;
+    color: white;
     margin-bottom: 10px;
     border-radius: 3px;
     border: 2px solid black;
 }
-@media (max-width:522px){
+@media (max-width:700px){
     form{
         margin-top: 90px;
     }
