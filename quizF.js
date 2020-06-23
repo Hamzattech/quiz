@@ -28,6 +28,7 @@ function submitAnswer(){
         score++
         }
    }
+   cAnswer.style.display = "block";
    message.style.display = "block";
    message.innerHTML = `Score saved,click the above button to check score.`;
     cAnswer.addEventListener('click',function(){
