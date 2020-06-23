@@ -86,7 +86,8 @@ p{
 #form{
     margin-top: 60px;
     background-color:#b784a7;
-    padding-left: 30px;
+    padding: 30px;
+    font-weight: 400;
 }
 .resultshow{
     background-color: #694f61;
