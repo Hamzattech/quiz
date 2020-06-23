@@ -12,6 +12,48 @@ body{
 
 
 }
+#checkAnswer{
+    position: fixed;
+    z-index: 99;
+    right: 20px;
+    top: 100px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(64, 92, 83);
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: small;
+}
+#result{
+    position: fixed;
+    right: 20px;
+    top: 150px;
+    padding: 6px;
+    border-radius: 7px;
+    background-color: grey;
+    color: white;
+    border: 2px solid black;
+    display: none;
+}
+#message{
+    display: none;
+    padding: 6px;
+    margin-left: 20px;
+    width: 80%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#reset{
+    padding: 6px;
+    border-radius: 3px;
+    color: green;
+    border: 2px solid black;
+}
 .formContainer{ 
     background-color:rgb(64, 92, 83);
     display: flex;
@@ -37,8 +79,7 @@ p{
 form{
     margin-top: 60px;
     background-color:white;
-    border-left: 1px solid green;
-    border-right: 1px solid green;
+    padding-left: 30px;
 }
 .resultshow{
     background-color: rgb(64, 92, 83);
@@ -46,6 +87,8 @@ form{
     padding: 10px;
     color: white;
     margin-bottom: 10px;
+    border-radius: 3px;
+    border: 2px solid black;
 }
 @media (max-width:522px){
     form{

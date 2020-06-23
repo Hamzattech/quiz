@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quizapp</title>
     <link rel="stylesheet" href="quizF.css" type="text/css">
-    <script defer  src="quizF.js"></script>
-   
+    <script src="my_jquery.js"></script>
+
+    <script>
+
+    </script>
+
 </head>
 <body>
-    
-    <div class="formContainer">
+    <a href="#" id="checkAnswer">check Your score</a>
+    <div id="result"></div>
+     <div class="formContainer">
         <div class="formRow">
             <h1>Javascript Quiz App</h1>
     <form name="quizForm" onsubmit="return submitAnswer()">
@@ -63,7 +68,9 @@
     <input type="radio" name="q10" id="q10b" value="b">b. No<br>
  <br><br><br>
     <input type="submit" value="Submit Answer" class="resultshow">
+    <input type="reset" value="Retake Quiz" id="reset">
     </form>
+    <div id="message"></div>
     <p>developed by Hamzat Ridwan &copy Hamzattech</p>
 </div>
 </div>

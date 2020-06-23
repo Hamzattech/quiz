@@ -11,6 +11,10 @@ function submitAnswer(){
     var q8 = document.forms["quizForm"]["q8"].value;
     var q9 = document.forms["quizForm"]["q9"].value;
     var q10 = document.forms["quizForm"]["q10"].value;
+    var cAnswer = document.getElementById("checkAnswer");
+    var result = document.getElementById("result");
+    var message = document.getElementById("message");
+
 
     for ( i = 1; i <= total; i++){
         if(eval('q'+i) == null || eval('q'+i) == ""){
@@ -24,5 +28,12 @@ function submitAnswer(){
         score++
         }
    }
-    alert('You got ' +score+ ' out of '+total);
-} 
+   message.style.display = "block";
+   message.innerHTML = `Score saved,click the above button to check score.`;
+    cAnswer.addEventListener('click',function(){
+        result.style.display = "block";
+        result.innerHTML = `<h5>You scored ${score} out of ${total}</h5>`;
+});
+  
+    return false;
+} ;
