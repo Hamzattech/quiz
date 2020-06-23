@@ -1,4 +1,4 @@
-function submitAnswer(){
+const submitAnswer = ()=>{
     var score = 0;
     var total = 10;
     var q1 = document.forms["quizForm"]["q1"].value;
@@ -30,8 +30,8 @@ function submitAnswer(){
    }
    cAnswer.style.display = "block";
    message.style.display = "block";
-   message.innerHTML = `Score saved,click the above button to check score.`;
-    cAnswer.addEventListener('click',function(){
+   message.innerHTML = `Score saved,click the above button to check your score.`;
+    cAnswer.addEventListener('click',()=>{
         result.style.display = "block";
         result.innerHTML = `<h5>You scored ${score} out of ${total}</h5>`;
 });
