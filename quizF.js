@@ -11,9 +11,10 @@ const submitAnswer = ()=>{
     var q8 = document.forms["quizForm"]["q8"].value;
     var q9 = document.forms["quizForm"]["q9"].value;
     var q10 = document.forms["quizForm"]["q10"].value;
-    var cAnswer = document.getElementById("checkAnswer");
-    var result = document.getElementById("result");
-    var message = document.getElementById("message");
+    let cAnswer = document.getElementById("checkAnswer");
+    let result = document.getElementById("result");
+    let message = document.getElementById("message");
+    let grade = document.getElementById("grade");
 
 
     for ( i = 1; i <= total; i++){
@@ -34,7 +35,20 @@ const submitAnswer = ()=>{
     cAnswer.addEventListener('click',()=>{
         result.style.display = "block";
         result.innerHTML = `<h5>You scored ${score} out of ${total}</h5>`;
+        grade.style.display = "block";
+        if(score >= 7){
+            grade.innerHTML = `<h5> Excellent </h5>`;
+        }if(score === 6){
+            grade.innerHTML = `<h5> Very Good </h5>`;
+        }if(score === 5 ){
+            grade.innerHTML = `<h5> Good </h5>`;
+        }if(score === 4){
+            grade.innerHTML = `<h5> Fair </h5>`;
+        }if(score < 4  ){
+            grade.innerHTML = `<h5> You can do better </h5>`;
+        }
 });
+
   
     return false;
 } ;
