@@ -1,9 +1,11 @@
+
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); 
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed&display=swap');
     *{
         padding: 0;
         margin: 0;
+      box-sizing:border-box;
     }
     body{
         background: transparent;
@@ -44,6 +46,73 @@
         color: white;
         display: none;
         font-weight: lighter;
+}
+
+#message{
+    display: none;
+    padding: 6px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 5px;
+    width: 80%;
+    border: 2px solid #694f61;
+
+    margin-bottom: -17px;
+}
+#reset{
+    padding: 6px;
+    border-radius: 3px;
+    color: white;
+    border: 2px solid black;
+    background-color: #694f61;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: small;
+}
+.formContainer{ 
+    background-color:#694f61;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+h1{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    margin-top: 0;
+    color: white;
+    padding: 10px;
+    
+}
+p{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+#form{
+    margin-top: 60px;
+    background-color:#b784a7;
+    padding: 30px;
+    font-weight: 400;
+    border: 1px solid black;
+}
+.resultshow{
+    background-color: #694f61;
+    margin-left: 10px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+@media (max-width:700px){
+    form{
+        margin-top: 90px;
     }
 
     #message{
