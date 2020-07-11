@@ -10,17 +10,16 @@
     body{
         background: transparent;
         font-family: 'Segoe UI';
-        font-weight: bold;
     }
     #checkAnswer{
         position: fixed;
         z-index: 99;
         right: 20px;
         top: 100px;
-        color: white;
+        color: #e0fbfc;
         text-decoration: none;
-        background-color: #b5838d;
-        padding: 6px;
+        background-color: #293241;
+        padding: 15px;
         border-radius: 5px;
         font-size: small;
         display: none;
@@ -28,22 +27,21 @@
     #result{
         position: fixed;
         right: 20px;
-        top: 150px;
-        padding: 6px;
+        top: 170px;
+        padding: 15px;
         border-radius: 7px;
-        background-color: #e5989b;
-        color: white;
+        background-color: #293241;
+        color: #e0fbfc;
         display: none;
-        font-weight: lighter;
     }
     #grade{
         position: fixed;
         right: 20px;
-        top: 205px;
-        padding: 6px;
+        top: 240px;
+        padding: 15px;
         border-radius: 7px;
-        background-color: #6d6875;
-        color: white;
+        background-color: #293241;
+        color: #e0fbfc;
         display: none;
         font-weight: lighter;
 }
@@ -119,26 +117,25 @@ p{
         display: none;
         padding: 6px;
         margin-left: 10px;
-        background-color: #6d6875;
-        color: white;
+        background-color: #293241;
+        color: #98c1d9;
         text-align: center;
         border-radius: 6px;
         margin-top: 5px;
         width: 80%;
-        border: 2px solid white;
         margin-bottom: -17px;
     }
     #reset{
-        padding: 6px;
-        border-radius: 3px;
-        color: white;
-        background-color: #6d6875;
+        padding: 10px;
+        border-radius: 5px;
+        color: #e0fbfc;
+        background-color: transparent;
         text-decoration: none;
-        font-weight: 400;
         font-size: small;
+        border: 2px solid #e0fbfc;
     }
     .formContainer{ 
-        background-color:#fffdb2;
+        background-color:#98c1d9;
         display: flex;
         flex-direction: column;
         margin-top: 0;
@@ -147,31 +144,33 @@ p{
         text-align: center;
         position: fixed;
         width: 100%;
-        background-color: #6d6875;
+        background-color: #293241;
         margin-top: 0;
-        color: white;
+        color: #e0fbfc;
         padding: 10px;
         
     }
     p{
-        background-color: #6d6875;
+        background-color: #293241;
         text-align: center;
-        color: white;
+        color: #e0fbfc;
         padding: 10px;
     }
     #form{
         margin-top: 60px;
-        background-color:#fffdb2;
+        background-color:#3d5a80;
         padding: 30px;
-        font-weight: 400;
+        color: #e0fbfc;
+        font-size: 16px;
+
     }
     .resultshow{
-        background-color: #ffb4a2;
+        background-color: #293241;
         margin-left: 10px;
-        padding: 10px;
-        color: black;
+        padding: 15px;
+        color: #e0fbfc;
         margin-bottom: 10px;
-        border-radius: 3px;
+        border-radius: 5px;
     }
     @media (max-width:700px){
         form{
